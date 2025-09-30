@@ -1,0 +1,16 @@
+Infrastructure automation frequently requires using REST APIs to perform tasks, trigger jobs, or otherwise perform tasks outside that available to normal tooling.
+
+Write a small client that will do the following.  
+- Read the example.json file, validate that it is valid JSON.
+- Modify the read structure to only include objects that have private set to false
+- Connect as a web client to a web service over HTTPS  (assume the web service exists, no need to write the server side)
+- Make a REST POST call, posting the selected JSON fragment to the endpoint /service/generate
+- The web server response will be a JSON map of objects.  Print the key of every object that has a child attribute "valid" set to true\
+
+Code in your preferred language i.e golang, python, perl, shell.  Place the code alongside the files in this directory.
+
+The code does not need to be runnable or demonstrated, but should you should attempt to be as correct as possible.
+Focus will be on any suitable error handling or logging to assist with debugging errors.
+Features to support changing the target service or input source are a stretch goal
+
+The expectation is you will be able to explain the code proposed during the interview.
